@@ -1,0 +1,5 @@
+@use '../../styles/scss/style.scss' as variables; // Use the variables in this file
+
+header {
+  color: variables.$primary-color;
+}
