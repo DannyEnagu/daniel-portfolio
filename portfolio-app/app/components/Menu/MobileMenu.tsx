@@ -9,9 +9,9 @@ function MobileMenu({isOpen, setIsOpen}: MobileMenuProps) {
   return (
     <nav className={`m-menu m-menu${isOpen ? "--open" : "--hidden"}`}>
       <section className="m-menu__header">
-      <a className='m-menu__header__brand' href='#'>
-        <span>Enagu</span>
-      </a>
+        <a className='m-menu__header__brand' href='#'>
+          <span>Enagu</span>
+        </a>
       {/* Toggle menu button
       TODO: Make the navicon a scss component
        */}

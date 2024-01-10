@@ -1,7 +1,6 @@
 .app-header {
   background-color: var(--color-cream);
   padding: var(--section-padding);
-  padding-inline: var(--padding-inline);
 
   .nav-container {
     display: flex;
@@ -69,7 +68,7 @@
       }
     }
 
-    @media screen and (min-width: 65em) {
+    @media screen and (min-width: 45em) {
       display: none;
     }
   }
@@ -79,7 +78,7 @@
 
   &__hero {
     font-family: var(--font-family-base);
-    padding: var(--padding-medium) 0;
+    padding-top: var(--padding-medium);
 
     h1, h2 {
       font-family: inherit;

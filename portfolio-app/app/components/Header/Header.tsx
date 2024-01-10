@@ -39,7 +39,10 @@ export default function Header() {
             <span className='app-header__icon__navicon'></span>
           </button>
       </div>
-      <section id='hero' className='app-header__hero'>
+      <div
+        id='hero'
+        className='app-header__hero'
+      >
         <h1 className='flex-heading'>Hello
           <span className='round-shape'></span>
         </h1>
@@ -60,7 +63,7 @@ export default function Header() {
           className='intro__button button'
           >Contact Me</a>
         </article>
-      </section>
+      </div>
     </header>
   )
 }

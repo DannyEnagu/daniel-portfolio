@@ -12,30 +12,32 @@
   --padding-small: 1.5rem;
   --padding-medium: 2.125rem;
   --padding-large: 2.74rem;
+  --padding-x-large: 3.438rem;
 
   --padding-inline: var(--spacing-small);
-  --border-size: 0.2rem;
+  --border-size-sm: 0.1rem;
+  --border-size-md: 0.2rem;
+  --border-size-lg: 0.3rem;
 
-  --border-small-black: var(--border-size) solid var(--color-grey);
-  --border-small-primary: var(--border-size) solid var(--color-primary);
+  --border-small-black: var(--border-size-md) solid var(--color-grey);
+  --border-small-primary: var(--border-size-sm) solid var(--color-primary);
 
   /** SECTION **/
   --section-padding: var(--padding-medium) 0;
-  --section-header-padding: 0 0 3rem;
+  --section-header-padding: var(--padding-medium);
   --section-header-align: center;
-  --section-title-font-size: var(--font-size-xx-large);
+  --section-header-font-size: 1.25rem;
+  --section-title-letter-spacing: var(--letter-spacing-small);
   --section-title-font-weight: var(--font-weight-bold);
   --section-title-line-height: var(--line-height-small);
   --section-title-margin: 0;
   --section-title-color: var(--color-black);
-  --section-tagline-transform: uppercase;
   --section-tagline-color: var(--color-primary);
+  --section-tagline-font-size: var(--font-size-small);
   --section-tagline-font-family: var(--font-family-title);
-  --section-tagline-font-weight: var(--font-weight-bold);
+  --section-tagline-font-weight: 600;
   --section-tagline-margin: 0;
   --section-body-padding: 2rem 0 4rem;
-  --section-footer-padding: 3rem 0 0;
-  --section-footer-align: center;
 
   /** HEADER **/
   --header-padding: var(--padding-medium) 0 var(--padding-small) 0;
@@ -56,7 +58,7 @@
   --button-display: inline-block;
   --button-padding: var(--spacing-x-small) var(--spacing-xx-small);
   --button-border: var(--border-small-primary);
-  --button-color: var(--color-primary);
+  --button-color: var(--color-black);
   --button-text-decoration: none;
   --button-font-size: var(--font-size-small);
   --button-hover-color: var(--color-black);
@@ -77,30 +79,8 @@
 
 html {
   scroll-behavior: smooth;
-  // @include fluid-type($min_width, $max_width, $min_font, $max_font);
-  // font-size: 62.5%;
 }
 
-/* For mobile styles */
-@media screen and (max-width: 30em) {
-  html {
-    // font-size: 57%;
-  }
-}
-
-/* Form small screen and Above styles */
-@media screen and (min-width: 45em) {
-  html {
-    // font-size: 60%;
-  }
-}
-
-/* For tablet / medium styles */
-@media screen and (max-width: 65em) {
-  html {
-    // font-size: 60%;
-  }
-}
 
 body {
   color: var(--text-color);
@@ -160,16 +140,62 @@ a:active {
 }
 
 .button-primary {
-  color: var(--color-white);
   background: var(--color-primary);
+  color: var(--button-color);
 }
 
 .button-primary:hover {
-  color: var(--color-primary);
+  --button-hover-color: var(--color-black);
   background: var(--color-white);
+  color: var(--button-hover-color);
 }
 
-section {
+.button-outline {
+  --button-color: var(--color-primary);
+  background: var(--color-white);
+  border: var(--border-small-primary);
+  color: var(--button-color);
+}
+
+.button-outline:hover {
+  --button-hover-color: var(--color-black);
+  background: var(--color-primary);
+  color: var(--button-hover-color);
+}
+
+.section {
   padding: var(--section-padding);
-  padding-inline: var(--padding-inline);
+  
+  &__header {
+    font-size: var(--section-header-font-size);
+    
+  
+    &__title {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      gap: 8px;
+      font-size: var(--section-title-font-size);
+      font-weight: var(--section-title-font-weight);
+      line-height: var(--section-title-line-height);
+      margin: var(--section-title-margin);
+      color: var(--section-title-color);
+    }
+
+    &__tagline {
+      font-family: var(--section-tagline-font-family);
+      font-size: var(--section-tagline-font-size);
+      font-weight: var(--section-tagline-font-weight);
+      text-align: var(--section-header-align);
+  
+      @media screen and (max-width: 45em) {
+        display: none;
+      }
+    }
+  }
+
+
+  &__body {
+    padding: var(--section-body-padding);
+  }
 }

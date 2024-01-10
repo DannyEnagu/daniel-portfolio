@@ -36,7 +36,7 @@
       opacity: 1;
     }
   }
-  
+
   @keyframes slide-in-right {
     0% {
       -webkit-transform: translateX(1000px);
@@ -51,7 +51,7 @@
   }
   
 
-  @media screen and (min-width: 65em) {
+  @media screen and (min-width: 45em) {
     display: none;
   }
 
@@ -60,6 +60,7 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
+    padding: var(--header-padding);
 
     &__brand {
       color: var(--color-primary);
