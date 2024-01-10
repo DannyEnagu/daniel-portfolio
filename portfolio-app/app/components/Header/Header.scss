@@ -1,5 +1,85 @@
-@use '../../styles/scss/style.scss' as variables; // Use the variables in this file
+.app-header {
+  justify-content: space-between;
+  display: flex;
+  padding: var(--section-padding);
+  padding-inline: var(--padding-inline);
 
-header {
-  color: variables.$primary-color;
+  &__brand {
+    color: var(--color-primary);
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-bolder);
+    line-height: var(--line-height-big);
+    letter-spacing: var(--letter-spacing-small);
+    text-decoration: none;
+
+    &--hidden {
+      display: none;
+    }
+  }
+
+  &__icon {
+    --button-padding: var(--padding-small);
+
+    background-color: inherit;
+    margin-right: -1rem;
+    padding: var(--button-padding);
+    position: relative;
+    user-select: none;
+    border: none;
+
+    &:hover {
+      background-color: var(--color-white);
+    }
+
+    &__navicon {
+      background-color: var(--color-black);
+      display: block;
+      width: 2rem;
+      height: .2rem;
+      position: relative;
+      transition: background .2s ease-out;
+      // border: 1px solid red;
+
+      &::before,
+      &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: var(--color-black);
+        transition: all .2s ease-out;
+      }
+
+      &::before {
+        top: -.7rem;
+      }
+
+      &::after {
+        top: .7rem;
+      }
+
+      // &--close {
+      //   background-color: transparent;
+
+      //   &::before,
+      //   &::after {
+      //     background-color: var(--color-primary);
+      //   }
+
+      //   &::before {
+      //     transform: rotate(45deg);
+      //     top: 0;
+      //   }
+
+      //   &::after {
+      //     transform: rotate(-45deg);
+      //     top: 0;
+      //   }
+      // }
+    }
+  }
 }
+
+/* Hamburger icon
+============================= */

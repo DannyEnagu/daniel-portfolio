@@ -1,1 +1,46 @@
-@forward './abstracts/variables'; // Forward the variables to the rest of the app
+/* ==========================================================================
+  Global styles
+============================================ */
+
+/* Base
+============================= */
+
+@use 'base';
+
+/* Helpers
+============================= */
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+.--hidden {
+  display: none;
+}
+
+main img {
+  width: 100%;
+  height: auto;
+}
+
+/* Layout
+============================= */
+
+.container {
+  max-width: 67.5rem; // 1080px
+  margin-inline: auto;
+  padding-inline: var(--padding-inline);
+}
+
+/* Grid
+============================= */
+
+ul {
+  padding: 0;
+  list-style: none;
+}

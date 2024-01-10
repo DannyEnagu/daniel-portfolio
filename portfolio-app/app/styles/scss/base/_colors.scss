@@ -1,0 +1,13 @@
+@use '../abstracts' as *;
+
+:root{
+  --color-primary: #{$color-orange};
+  --color-black:  #{$color-black};
+  --color-white: #{$color-white};
+  --color-grey: #{$color-grey};
+  --color-light-grey: #{$color-light-grey};
+  --color-dark-grey: #{$color-dark-grey};
+
+  --text-color: var(--color-black);
+  --text-primary: var(--color-primary);
+}

@@ -1,6 +1,26 @@
-$primary-color: red;
-$secondary-color: blue;
- 
-// :export {
-//   primaryColor: $primary-color;
-// }
+
+// Colors
+$color-orange: #F69B32;
+$color-dark-orange: #F69B3280;
+$color-black: #2B2B2B;
+$color-white: #FDFAFA;
+$color-grey: #A4A4A4;
+$color-dark-grey: #474747;
+$color-light-grey: #f3f3f3;
+
+
+// Fonts Sizes
+$min_width: 320px;
+$max_width: 1200px;
+$min_font: 16px;
+$max_font: 24px;
+
+// Fonts Families
+$font-family-base: Poppins, 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-title: Inter, 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+/* Base Font values */
+$text-base-size: 1em;
+$text-scale-ratio: 1.2;
+
+$baseline: 24px;
