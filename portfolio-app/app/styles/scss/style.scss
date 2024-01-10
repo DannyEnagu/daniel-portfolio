@@ -23,6 +23,35 @@
   display: none;
 }
 
+.rounded {
+  border-radius: 50%;
+}
+
+.round-shape {
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+}
+
+.rectangle-shape {
+  display: inline-block;
+  width: 3.625rem;
+  height: 0.25rem;
+  background-color: var(--color-primary);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.flex-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 main img {
   width: 100%;
   height: auto;

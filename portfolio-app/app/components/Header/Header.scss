@@ -1,8 +1,15 @@
 .app-header {
-  justify-content: space-between;
-  display: flex;
+  background-color: var(--color-cream);
   padding: var(--section-padding);
   padding-inline: var(--padding-inline);
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+/* Brand icon
+============================= */
 
   &__brand {
     color: var(--color-primary);
@@ -12,11 +19,13 @@
     letter-spacing: var(--letter-spacing-small);
     text-decoration: none;
 
-    &--hidden {
-      display: none;
+    @media screen and (max-width: 65em) {
+      visibility: hidden;
     }
   }
 
+/* Hamburger icon
+============================= */
   &__icon {
     --button-padding: var(--padding-small);
 
@@ -58,28 +67,56 @@
       &::after {
         top: .7rem;
       }
+    }
 
-      // &--close {
-      //   background-color: transparent;
+    @media screen and (min-width: 65em) {
+      display: none;
+    }
+  }
 
-      //   &::before,
-      //   &::after {
-      //     background-color: var(--color-primary);
-      //   }
+/* Hero
+============================= */
 
-      //   &::before {
-      //     transform: rotate(45deg);
-      //     top: 0;
-      //   }
+  &__hero {
+    font-family: var(--font-family-base);
+    padding: var(--padding-medium) 0;
 
-      //   &::after {
-      //     transform: rotate(-45deg);
-      //     top: 0;
-      //   }
-      // }
+    h1, h2 {
+      font-family: inherit;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: var(--font-size-x-large);
+      font-weight: var(--font-weight-bold);
+      letter-spacing: 0;
+    }
+
+    
+    .intro {
+      font-size: var(--font-size-medium);
+
+      &__name {
+        font-weight: var(--font-weight-regular);
+        font-size: var(--font-size-large);
+        line-height: 2.5;
+        letter-spacing: 0.25px;
+      }
+
+      &__text {
+        .pre {
+          font-size: var(--font-size-large);
+        }
+
+        .profession {
+          font-size: var(--font-size-large);
+          font-weight: var(--font-weight-bold);
+        }
+      }
+
+      &__button {
+        margin-top: 17px;
+      }
     }
   }
 }
-
-/* Hamburger icon
-============================= */
