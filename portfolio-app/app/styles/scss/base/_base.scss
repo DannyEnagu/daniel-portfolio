@@ -2,24 +2,24 @@
 
 :root {
   /** SPACING */
-  --spacing-x-small: 0.5rem;
-  --spacing-xx-small: 0.75rem;
+  --spacing-xx-small: 0.5rem;
+  --spacing-x-small: 0.75rem;
   --spacing-small: 1rem; // 16px
   --spacing-medium: 2.125rem; // 34px
   --spacing-large: 2.74rem; // 44px
   --spacing-x-large: 3.5rem; // 56px
 
-  --padding-small: 1.5rem;
-  --padding-medium: 2.125rem;
-  --padding-large: 2.74rem;
-  --padding-x-large: 3.438rem;
+  --padding-small: 1.5rem; // 24px
+  --padding-medium: 2.125rem; // 34px
+  --padding-large: 2.74rem; // 44px
+  --padding-x-large: 3.438rem; // 55px
 
   --padding-inline: var(--spacing-small);
   --border-size-sm: 0.1rem;
   --border-size-md: 0.2rem;
   --border-size-lg: 0.3rem;
 
-  --border-small-black: var(--border-size-md) solid var(--color-grey);
+  --border-small-black: 2px solid var(--color-grey);
   --border-small-primary: var(--border-size-sm) solid var(--color-primary);
 
   /** SECTION **/
@@ -37,7 +37,7 @@
   --section-tagline-font-family: var(--font-family-title);
   --section-tagline-font-weight: 600;
   --section-tagline-margin: 0;
-  --section-body-padding: 2rem 0 4rem;
+  // --section-body-padding: ;
 
   /** HEADER **/
   --header-padding: var(--padding-medium) 0 var(--padding-small) 0;
@@ -56,7 +56,7 @@
 
   /** BUTTON **/
   --button-display: inline-block;
-  --button-padding: var(--spacing-x-small) var(--spacing-xx-small);
+  --button-padding: var(--spacing-xx-small) var(--spacing-x-small);
   --button-border: var(--border-small-primary);
   --button-color: var(--color-black);
   --button-text-decoration: none;
@@ -145,7 +145,7 @@ a:active {
 }
 
 .button-primary:hover {
-  --button-hover-color: var(--color-black);
+  --button-hover-color: var(--color-primary);
   background: var(--color-white);
   color: var(--button-hover-color);
 }
@@ -165,17 +165,15 @@ a:active {
 
 .section {
   padding: var(--section-padding);
+  padding-inline: var(--padding-inline);
   
   &__header {
-    font-size: var(--section-header-font-size);
-    
-  
     &__title {
       align-items: center;
       justify-content: center;
       display: flex;
       gap: 8px;
-      font-size: var(--section-title-font-size);
+      font-size: var(--section-header-font-size);
       font-weight: var(--section-title-font-weight);
       line-height: var(--section-title-line-height);
       margin: var(--section-title-margin);
@@ -189,13 +187,15 @@ a:active {
       text-align: var(--section-header-align);
   
       @media screen and (max-width: 45em) {
-        display: none;
+        &--hidden {
+          display: none;
+        }
       }
     }
   }
 
 
   &__body {
-    padding: var(--section-body-padding);
+    // padding: var(--section-body-padding);
   }
 }

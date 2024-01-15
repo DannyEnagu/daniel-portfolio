@@ -3,11 +3,13 @@
   font-weight: var(--font-weight-small);
   line-height: 1.2;
   letter-spacing: var(--letter-spacing-small);
+  padding-bottom: 0;
 
   &__me {
     display: grid;
     grid-template-columns: repeat(2, minmax(190px, 1fr));
     grid-gap: 10px;
+    padding: var(--section-padding);
     
     &__img-wrapper {
       background-image: linear-gradient(
@@ -37,10 +39,14 @@
   }
 
   &__skills {
-    padding: var(--section-padding);
     font-size: var(--section-header-font-size);
     line-height: var(--section-title-line-height);
     letter-spacing: var(--section-title-letter-spacing);
+    padding: var(--padding-medium) var(--padding-small);
+
+    @media screen and (max-width: 30em) {
+      background-color: var(--color-cream);
+    }
 
     h4 {
       margin: var(--section-title-margin);
@@ -50,17 +56,19 @@
       padding: var(--padding-small) 0;
       display: grid;
       grid-template-columns: repeat(3, minmax(112px, 1fr));
-      gap: var(--spacing-x-small);
+      gap: var(--spacing-xx-small);
 
       span {
+        background-color: var(--color-cream);
         border: var(--border-small-primary);
+        border-color: var(--color-primary-dark);
         border-radius: 15px;
         display: inline-block;
         font-size: var(--font-size-x-small);
         font-weight: var(--font-weight-regular);
         line-height: var(--line-height-base);
         text-align: center;
-        padding: var(--section-header-font-size);
+        padding: var(--padding-small);
 
         /* Place the last item in the middle column when
         it's the only item in the last row
@@ -72,10 +80,11 @@
     }
 
     &__actions {
-      padding: var(--padding-x-large);
+      padding-top: var(--spacing-x-large);
       text-align: center;
       display: flex;
-      gap: var(--spacing-x-small);
+      justify-content: center;
+      gap: var(--spacing-xx-small);
     }
   }
 }

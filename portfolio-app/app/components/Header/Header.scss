@@ -1,6 +1,11 @@
 .app-header {
   background-color: var(--color-cream);
-  padding: var(--section-padding);
+  padding-top: var(--padding-medium);
+  padding-bottom: var(--padding-medium);
+
+  @media screen and (min-width: 45em) {
+    padding: var(--padding-small) var(--padding-medium);
+  }
 
   .nav-container {
     display: flex;

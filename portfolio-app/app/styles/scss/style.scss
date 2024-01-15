@@ -29,10 +29,14 @@
 
 .round-shape {
   border-radius: 50%;
-  background-color: var(--color-primary);
+  border: var(--border-small-primary);
   display: inline-block;
   width: 1rem;
   height: 1rem;
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
 }
 
 .rectangle-shape {
@@ -67,6 +71,9 @@ main img {
 .container {
   max-width: 67.5rem; // 1080px
   margin-inline: auto;
+}
+
+.px-1 {
   padding-inline: var(--padding-inline);
 }
 
