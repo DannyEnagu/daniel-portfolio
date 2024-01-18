@@ -5,13 +5,15 @@ function Contact() {
     <div className="container">
       <section id='contact' className='section contact'>
         <div className='section__header'>
-          <h2 className="section__header__title">
-            <span className="rectangle-shape"></span>
-            <span className='text-primary'>Contact</span>
-          </h2>
-          <h3 className="section__header__tagline">
-            Feel free to reach out to me
-          </h3>
+          <div>
+            <h2 className="section__header__title">
+              <span className="rectangle-shape"></span>
+              <span className='text-primary'>Contact</span>
+            </h2>
+            <h3 className="section__header__tagline">
+              Feel free to reach out to me
+            </h3>
+          </div>
         </div>
         <div className="section__body">
           <form className="form">

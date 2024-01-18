@@ -6,13 +6,15 @@ function Projects() {
     <section id='projects' className='section projects'>
       <div className="container">
         <div className='section__header'>
-          <h2 className="section__header__title">
-            <span className="rectangle-shape"></span>
-            <span className='text-primary'>Projects</span>
-          </h2>
-          <h3 className="section__header__tagline section__header__tagline--hidden">
-            See Some Of My Works
-          </h3>
+          <div>
+            <h2 className="section__header__title">
+              <span className="rectangle-shape"></span>
+              <span className='text-primary'>Projects</span>
+            </h2>
+            <h3 className="section__header__tagline section__header__tagline--hidden">
+              See Some Of My Works
+            </h3>
+          </div>
         </div>
         <div className="section__body">
           <div className="projects__container">

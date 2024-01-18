@@ -173,13 +173,20 @@ a:active {
   padding-inline: var(--padding-inline);
   
   &__header {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--spacing-xx-small);
+
+    @media screen and (min-width: 45em) {
+      margin-bottom: var(--spacing-x-large);
+    }
 
     & > * {
       @media screen and (min-width: 45em) {
+        position: absolute;
+        top: 0;
+        left: 35%;
         width: 422px;
       }
     }

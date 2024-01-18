@@ -14,7 +14,7 @@
       gap: 1.5rem;
       overflow-x: auto;
       padding: var(--padding-medium);
-
+      
       @media screen and (min-width: 714px) {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

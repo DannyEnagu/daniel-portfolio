@@ -65,7 +65,7 @@ export default function Header() {
           <div className='img-wrapper'>
             <Image
               className='img'
-              src="/images/about.jpg"
+              src="/images/pro-pix-2.png"
               alt='Hero Daniel Enagu'
               width={200}
               height={200}

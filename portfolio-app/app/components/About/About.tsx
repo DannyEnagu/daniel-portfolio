@@ -5,20 +5,22 @@ function About() {
   return (
     <section id='about' className='about container'>
       <div className='section__header'>
-        <h2 className="section__header__title">
-          <span className="rectangle-shape"></span>
-          <span className='text-primary'>About</span>
-        </h2>
-        <h3 className="section__header__tagline section__header__tagline--hidden">
-          I am Daniel Enagu, a passionate Frontend Developer
-        </h3>
+        <div>
+          <h2 className="section__header__title">
+            <span className="rectangle-shape"></span>
+            <span className='text-primary'>About</span>
+          </h2>
+          <h3 className="section__header__tagline section__header__tagline--hidden">
+            I am Daniel Enagu, a passionate Frontend Developer
+          </h3>
+        </div>
       </div>
       <div className="section__body">
         <div className='about-content'>
           <article className="about__me">
             <div className="about__me__img-wrapper left">
               <Image
-                src='/images/about.jpg'
+                src='/images/pro-pix-about.png'
                 alt='Daniel Enagu'
                 className='about__me__img-wrapper__img'
                 width={200}
