@@ -3,6 +3,8 @@
 :root {
   --font-family-base: #{$font-family-base};
   --font-family-title: #{$font-family-title};
+    /* Step 0: 16.00px → 24.00px */
+    // --step-0: clamp(1rem, 0.8864rem + 0.5682vw, 1.5rem);
 
   --font-size-x-small: 0.938rem; // 15px
   --font-size-small: 1rem; // 16px

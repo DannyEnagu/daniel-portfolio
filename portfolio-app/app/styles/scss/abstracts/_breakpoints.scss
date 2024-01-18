@@ -1,6 +1,6 @@
 /* For small screen and Above styles */
 $breakpoints: (
-  'small': (max-width: 30em),
-  'medium': (min-width: 45em),
-  'large': (min-width: 65em),
+  'small': (max-width: 30em), // 480px
+  'medium': (min-width: 45em), // 720px
+  'large': (min-width: 65em), // 1040px
 ); 

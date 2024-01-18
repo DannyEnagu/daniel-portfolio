@@ -1,5 +1,6 @@
 
 import { useState } from 'react';
+import Image from 'next/image';
 import DesktopMenu from '../Menu/DesktopMenu';
 import MobileMenu from '../Menu/MobileMenu';
 import './Header.scss';
@@ -13,11 +14,6 @@ export default function Header() {
     >
       <div className="container">
         <div className="nav-container">
-          {/* TODO: Make a SCSS component */}
-          <a className='app-header__brand' href='#'>
-            <span>Enagu</span>
-          </a>
-
           <MobileMenu
               isOpen={isOpen}
               setIsOpen={setIsOpen}
@@ -44,26 +40,37 @@ export default function Header() {
           id='hero'
           className='app-header__hero'
         >
-          <h1 className='flex-heading'>Hello
-            <span className='round-shape bg-primary'></span>
-          </h1>
-          <article className="intro">
-            <h2 className="intro__name flex-heading">
-              <span className='rectangle-shape'></span> I'm
-              <span className='text-primary'>Daniel Enagu</span>
-            </h2>
-            <p className="intro__text">
-              <span className='pre'>a </span>
-              <strong className='profession'>FRONTEND DEVELOPER </strong>
-            </p>
-            <p>
-              who creates superior quality websites which is accessible for everyday use
-            </p>
-            <a
-            href="#contact"
-            className='intro__button button'
-            >Contact Me</a>
-          </article>
+          <div className='content'>
+            <h1 className='flex-heading'>Hello
+              <span className='round-shape bg-primary'></span>
+            </h1>
+            <article className="intro">
+              <h2 className="intro__name flex-heading">
+                <span className='rectangle-shape'></span> I'm
+                <span className='text-primary'>Daniel Enagu</span>
+              </h2>
+              <p className="intro__text">
+                <span className='pre'>a </span>
+                <strong className='profession'>FRONTEND DEVELOPER </strong>
+              </p>
+              <p>
+                who creates superior quality websites which is accessible for everyday use
+              </p>
+              <a
+              href="#contact"
+              className='intro__button button'
+              >Contact Me</a>
+            </article>
+          </div>
+          <div className='img-wrapper'>
+            <Image
+              className='img'
+              src="/images/about.jpg"
+              alt='Hero Daniel Enagu'
+              width={200}
+              height={200}
+            />
+          </div>
         </div>
       </div>
     </header>

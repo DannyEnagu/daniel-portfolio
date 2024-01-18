@@ -29,7 +29,7 @@ function Projects() {
                   height={200}
                 />
                   <span className="overlay">
-                    <span className="text">Hello World</span>
+                    <span className="text">Coming Soon</span>
                   </span>
               </a>
               <a
@@ -44,7 +44,7 @@ function Projects() {
                   height={200}
                 />
                   <span className="overlay">
-                    <span className="text">Hello World</span>
+                    <span className="text">Coming Soon</span>
                   </span>
               </a>
               <a
@@ -59,14 +59,89 @@ function Projects() {
                   height={200}
                 />
                   <span className="overlay">
-                    <span className="text">Hello World</span>
+                    <span className="text">Coming Soon</span>
+                  </span>
+              </a>
+              <a
+                href="#"
+                className="carousel__item"
+              >
+                <Image
+                  src="/images/projects/aron-visuals-bZZp1PmHI0E-unsplash.jpg"
+                  alt="Peoject 4"
+                  className="carousel__item__image"
+                  width={200}
+                  height={200}
+                />
+                  <span className="overlay">
+                    <span className="text">Coming Soon</span>
+                  </span>
+              </a>
+              <a
+                href="#"
+                className="carousel__item"
+              >
+                <Image
+                  src="/images/projects/eberhard-grossgasteiger-xC7Ho08RYF4-unsplash.jpg"
+                  alt="Peoject 5"
+                  className="carousel__item__image"
+                  width={200}
+                  height={200}
+                />
+                  <span className="overlay">
+                    <span className="text">Coming Soon</span>
+                  </span>
+              </a>
+              <a
+                href="#"
+                className="carousel__item"
+              >
+                <Image
+                  src="/images/projects/hao-wang-pVq6YhmDPtk-unsplash.jpg"
+                  alt="Peoject 6"
+                  className="carousel__item__image"
+                  width={200}
+                  height={200}
+                />
+                  <span className="overlay">
+                    <span className="text">Coming Soon</span>
+                  </span>
+              </a>
+              <a
+                href="#"
+                className="carousel__item"
+              >
+                <Image
+                  src="/images/projects/aron-visuals-bZZp1PmHI0E-unsplash.jpg"
+                  alt="Peoject 7"
+                  className="carousel__item__image"
+                  width={200}
+                  height={200}
+                />
+                  <span className="overlay">
+                    <span className="text">Coming Soon</span>
+                  </span>
+              </a>
+              <a
+                href="#"
+                className="carousel__item"
+              >
+                <Image
+                  src="/images/projects/eberhard-grossgasteiger-xC7Ho08RYF4-unsplash.jpg"
+                  alt="Peoject 8"
+                  className="carousel__item__image"
+                  width={200}
+                  height={200}
+                />
+                  <span className="overlay">
+                    <span className="text">Coming Soon</span>
                   </span>
               </a>
             </div>
             <div className="controls">
-              <div className="controls__dots round-shape"></div>
-              <div className="controls__dots round-shape bg-primary"></div>
-              <div className="controls__dots round-shape"></div>
+              <button className="controls__dots round-shape"></button>
+              <button className="controls__dots round-shape controls__dots--active"></button>
+              <button className="controls__dots round-shape"></button>
             </div>
           </div>
         </div>

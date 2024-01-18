@@ -4,34 +4,27 @@
   padding-bottom: var(--padding-medium);
 
   @media screen and (min-width: 45em) {
-    padding: var(--padding-small) var(--padding-medium);
+    padding-top: calc(var(--padding-small) * 2);
+    padding-bottom: 0;
+    margin-bottom: var(--padding-small);
+    background-image: linear-gradient(
+        to right,
+       transparent 50%,
+       var(--color-primary-dark) 50%
+      );
   }
 
-  .nav-container {
-    display: flex;
-    justify-content: space-between;
+  @media screen and (min-width: 65em) {
+    padding-top: calc(var(--padding-small) * 3);
   }
 
-/* Brand icon
-============================= */
-
-  &__brand {
-    color: var(--color-primary);
-    font-size: var(--font-size-large);
-    font-weight: var(--font-weight-bolder);
-    line-height: var(--line-height-big);
-    letter-spacing: var(--letter-spacing-small);
-    text-decoration: none;
-
-    @media screen and (max-width: 65em) {
-      visibility: hidden;
-    }
-  }
 
 /* Hamburger icon
 ============================= */
   &__icon {
     --button-padding: var(--padding-small);
+    float: right;
+    clear: both;
 
     background-color: inherit;
     margin-right: -1rem;
@@ -84,6 +77,39 @@
   &__hero {
     font-family: var(--font-family-base);
     padding-top: var(--padding-medium);
+
+    .img-wrapper {
+      display: none;
+    }
+
+    @media screen and (min-width: 45em) {
+      align-items: center;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: var(--padding-medium);
+      padding-top: 0;
+
+      .content {
+        padding: 0 var(--padding-small);
+      }
+
+      .img-wrapper {
+        display: block;
+        height: 100%;
+        text-align: right;
+      }
+
+      .img {
+        object-fit: cover;
+        transition: 180ms width ease-in;
+        height: 100%;
+        width: 90%;
+      }
+    }
+
+    @media screen and (min-width: 65em) {
+      margin-top: calc(var(--padding-medium) * 1.5);
+    }
 
     h1, h2 {
       font-family: inherit;
