@@ -24,10 +24,19 @@
 
       &__item {
         flex: 0 0 200px;
-        display: block;
+        display: none;
         position: relative;
         overflow: hidden;
         height: 200px;
+
+        &:nth-child(-n+3) {
+          display: block;
+        }
+
+        @media screen and (min-width: 714px) {
+          display: block;
+        }
+
 
         &__image {
           display: block;
@@ -68,6 +77,19 @@
 
       }
 
+    }
+
+    .cta {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      gap: var(--spacing-small);
+      margin-top: var(--spacing-medium);
+
+      @media screen and (min-width: 714px) {
+        display: flex;
+        margin-top: var(--spacing-large);
+      }
     }
 
     .controls {

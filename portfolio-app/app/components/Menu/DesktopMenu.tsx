@@ -14,13 +14,13 @@ function DesktopMenu() {
       >
         <ul className='d-menu__items'>
           <li className='d-menu__items__item d-menu__items__item'>
-            <a className='d-menu__items__item__links --active' href='#'>About</a>
+            <a className='d-menu__items__item__links --active' href='#about'>About</a>
           </li>
           <li className='d-menu__items__item'>
-            <a className='d-menu__items__item__links' href='#'>Projects</a>
+            <a className='d-menu__items__item__links' href='#projects'>Projects</a>
           </li>
           <li className='d-menu__items__item active'>
-            <a className='d-menu__items__item__links' href='#'>Contact</a>
+            <a className='d-menu__items__item__links' href='#contact'>Contact</a>
           </li>
         </ul>
       </div>

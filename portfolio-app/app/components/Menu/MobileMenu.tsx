@@ -35,13 +35,31 @@ function MobileMenu({isOpen, setIsOpen}: MobileMenuProps) {
       >
         <ul className='m-menu__items'>
           <li className='m-menu__items__item m-menu__items__item--active'>
-            <a className='m-menu__items__item__links' href='#'>About</a>
+            <a
+              className='m-menu__items__item__links'
+              href='#about'
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              About
+            </a>
           </li>
           <li className='m-menu__items__item active'>
-            <a className='m-menu__items__item__links' href='#'>Projects</a>
+            <a
+              className='m-menu__items__item__links'
+              href='#projects'
+              onClick={() => setIsOpen(!isOpen)}
+            >
+            Project
+            </a>
           </li>
           <li className='m-menu__items__item active'>
-            <a className='m-menu__items__item__links' href='#'>Contact</a>
+            <a
+              className='m-menu__items__item__links'
+              href='#contact'
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              Contact
+            </a>
           </li>
         </ul>
       </section>
