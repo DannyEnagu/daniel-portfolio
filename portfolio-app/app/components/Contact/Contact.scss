@@ -1,0 +1,57 @@
+.contact {
+  @media screen and (max-width: 30em) {
+    background-color: var(--color-cream);
+    padding-bottom: 6.25rem;
+  }
+
+  .section__body {
+    .form {
+      margin-inline: auto;
+      max-width: 650px;
+      padding: 2.313rem var(--padding-small) 0;
+
+      @media screen and (min-width: 45em) {
+        max-width: 800px;
+        padding-bottom: var(--padding-medium);
+      }
+
+      & > *+* {
+        padding-top: 10px;
+      }
+
+      &__group {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        label {
+          font-family: var(--font-family-title);
+          color: var(--color-black);
+          font-size: var(--font-size-small);
+          font-weight: 600;
+          line-height: 2;
+        }
+
+        input, textarea {
+          border: var(--border-small-black);
+          font-family: var(--font-family-title);
+          color: var(--color-black);
+          font-size: var(--font-size-small);
+          font-weight: 300;
+          line-height: 2;
+          outline: none;
+          padding: 0 20px;
+          width: 100%;
+
+          &:focus {
+            border: var(--border-small-primary);
+          }
+        }
+
+        button {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
